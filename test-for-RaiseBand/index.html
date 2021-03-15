@@ -20,31 +20,41 @@
     <title>Raise Band</title>
   </head>
   <body>
-   <header>
+    <header>
+      <label for="toggle"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="toggle">
       <nav>
+         <ul>
+          <li>
+            <a class="logo" href="#"
+            ><img src="./assets/logo.png" alt="Logo picture"
+          /></a>
+          </li>
+         </ul>
         <ul class="nav-list">
           <li>
-            <a class="nav-list-link logo" href="#"
-              ><img src="./assets/logo.png" alt="Logo picture"
-            /></a>
-          </li>
-          <li>
-            <a class="nav-list-link" href="#"><i class="fas fa-search"></i></a>
+            <a class="nav-list-link" href="#"
+              ><i class="fas fa-search"></i
+            ></a>
           </li>
           <li>
             <a class="nav-list-link" href="#"
-              ><img src="./assets/mobile-vibration.svg" alt="image" />Call us</a
+              ><img
+                class="vibrating-phone hidden"
+                src="./assets/mobile-vibration.svg"
+                alt="image"
+              />Call us</a
             >
           </li>
           <li><a class="nav-list-link" href="#">About</a></li>
           <li><a class="nav-list-link" href="#">Product</a></li>
           <li><a class="nav-list-link" href="#">FAQ</a></li>
           <li><a class="nav-list-link" href="#">Contact</a></li>
-          <li>
-            <a id="nav" class="nav-list button-primary" href="#">Download</a>
+          <li class="">
+            <a id="nav" class="nav-list-link button-primary" href="#">Download</a>
           </li>
-          <li>
-            <a id="sign" class="nav-list button-secondary" href="#">Sign up</a>
+          <li class="">
+            <a id="sign" class="nav-list-link button-secondary" href="#">Sign up</a>
           </li>
         </ul>
       </nav>
