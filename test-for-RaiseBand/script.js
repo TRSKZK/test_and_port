@@ -1,20 +1,21 @@
 "use strict";
-const burgerMen = document.querySelector(`.fa-bars`)
+const burgerMen = document.querySelector(`.nav-burger`);
+const logo = document.querySelector(`.logo`)
+const navList = document.querySelector(`.nav-list`);
 
-const [...navList] = document.querySelectorAll(`.nav-list-link`)
+const header = document.querySelector(`header`);
+
+header.addEventListener(`click`, function (e) {
+    e.preventDefault()
+    if (e.target.classList.contains(`nav-burger`))
+    burgerMen.classList.toggle(`active`)
+    navList.classList.toggle(`active`)
+    logo.classList.toggle(`active`)
+    console.log(e.target);
+});
 
 
-// console.log(window.outerWidth);
 
-
-// burgerMen.addEventListener(`click`, () => {
-//     navList.forEach(el => {
-//         if (document.documentElement.scrollWidth < 750) {
-//             if (el.classList.contains(`nav-list-link`))
-//                 el.classList.toggle(`hidden`)
-//         } else el.style.display = `block`
-            
-        
-//     })
-    
+// burgerMen.addEventListener(`click`, function () {
+//    burgerMen.classList.toggle(`active`)
 // })

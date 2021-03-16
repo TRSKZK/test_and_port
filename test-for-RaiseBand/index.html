@@ -21,21 +21,21 @@
   </head>
   <body>
     <header>
-      <label for="toggle"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="toggle">
-      <nav>
-         <ul>
-          <li>
-            <a class="logo" href="#"
+      <ul class="header-components">
+        <li>
+          <a class="logo" href="#"
             ><img src="./assets/logo.png" alt="Logo picture"
           /></a>
-          </li>
-         </ul>
-        <ul class="nav-list">
+        </li>
+        <li class="nav-burger">
+          <div ><span class="nav-burger" ></span></div>
+        </li>
+      </ul>
+
+      <nav class="nav-list">
+        <ul>
           <li>
-            <a class="nav-list-link" href="#"
-              ><i class="fas fa-search"></i
-            ></a>
+            <a class="nav-list-link" href="#"><i class="fas fa-search"></i></a>
           </li>
           <li>
             <a class="nav-list-link" href="#"
@@ -51,15 +51,20 @@
           <li><a class="nav-list-link" href="#">FAQ</a></li>
           <li><a class="nav-list-link" href="#">Contact</a></li>
           <li class="">
-            <a id="nav" class="nav-list-link button-primary" href="#">Download</a>
+            <a id="nav" class="nav-list-link button-primary" href="#"
+              >Download</a
+            >
           </li>
           <li class="">
-            <a id="sign" class="nav-list-link button-secondary" href="#">Sign up</a>
+            <a id="sign" class="nav-list-link button-secondary" href="#"
+              >Sign up</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    
+
+  
 
     <script src="./script.js"></script>
     <script
