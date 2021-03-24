@@ -92,26 +92,25 @@
 
         <div class="section-3-card">
           <div>
-          <div class="section-3-circle">
-            <div>
-              <div class="section-3-square">
-                <i class="fas fa-pen"></i>
+            <div class="section-3-circle">
+              <div>
+                <div class="section-3-square">
+                  <i class="fas fa-pen"></i>
+                </div>
               </div>
             </div>
+            <h5>Notice</h5>
           </div>
-          <h5>Notice</h5>
+          <div>
+            <p>
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est.
+            </p>
+          </div>
         </div>
-           <div>
-          <p>
-            Nam libero tempore, cum soluta nobis est eligendi optio, cumque
-            nihil impedit, quo minus id, quod maxime placeat, facere possimus,
-            omnis voluptas assumenda est.
-          </p>
-        </div>
-        </div>
-        
       </div>
-      
+
       <div class="main section-4">
         <h3>Temporibus autem quibusdam et aut officiis debitis</h3>
         <p>
@@ -123,56 +122,155 @@
         </p>
         <a class="button-primary" href="#">Try for free</a>
       </div>
-      <div class="cleafix"></div>
     </main>
+    <div class="cleafix"></div>
 
-    <form action="post">
+    <form id="form" action="post">
       <div class="form-text-container">
         <h3>Calculator</h3>
         <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
       </div>
       <div class="mb-3 row">
-      <select class="form-select form-select-sm" aria-label=".form-select-lg example">
-        <option selected>Colors</option>
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="orange">orange</option>
-      </select>
-      
-      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-        <option selected>Size</option>
-        <option value="100%">100%</option>
-        <option value="200%">200%</option>
-        <option value="300%">300%</option>
-      </select>
+        <div id="color" class="dropdown-wrapp">
+          <span class="dropdown-value">Color</span>
+          <span class="arrow-container"><i class="fas fa-sort-down"></i></span>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">red</li>
+            <li class="dropdown-item">green</li>
+            <li class="dropdown-item">blue</li>
+            <li class="dropdown-item">orange</li>
+          </ul>
+        </div>
 
-      <input class="form-control form-control-sm" type="date">
-      <div class="dynamic-button">
-        <span class="plus-button">+</span>
-        <input class="form-control form-control-sm" type="button" value="100">
-        <span class="minus-button">-</span>
+        <div id="size" class="dropdown-wrapp">
+          <span class="dropdown-value">Size</span>
+          <span class="arrow-container"><i class="fas fa-sort-down"></i></span>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">100%</li>
+            <li class="dropdown-item">200%</li>
+            <li class="dropdown-item">300%</li>
+          </ul>
+        </div>
+
+        <input
+          id="calendar"
+          class="form-control form-control-sm dropdown-wrapp"
+          type="date"
+        />
+
+        <div class="dynamic-button">
+          <span class="plus-button">+</span>
+          <input
+            id="plus-minus"
+            class="form-control form-control-sm"
+            type="button"
+            value="50"
+          />
+          <span class="minus-button">-</span>
+        </div>
+        <div class="result-value">55</div>
       </div>
-      <div class="result-value">55</div>
-    </div>
 
-    <div class="mb-3 row">
-      <select class="form-select form-select-lg " aria-label=".form-select-lg example">
-        <option selected>City</option>
-        <option value="1">Kyiv</option>
-        <option value="2">Odessa</option>
-        <option value="3">Rivne</option>
-        <option value="3">Lviv</option>
-      </select>
-      <select class="form-select form-select-lg " aria-label=".form-select-lg example">
-        <option selected>Delivery</option>
-        <option value="1">New Post</option>
-        <option value="2">Ukrposhta</option>
-        <option value="3">Pickup</option>
-      </select>
-      <a class="button-primary proceed" href="#">Proceed</a>
-    </div>
+      <div class="mb-3 row">
+        <div id="city" class="dropdown-wrapp long">
+          <span class="dropdown-value">City</span>
+          <span class="arrow-container long"
+            ><i class="fas fa-sort-down"></i
+          ></span>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">Kyiv</li>
+            <li class="dropdown-item">Odessa</li>
+            <li class="dropdown-item">Lviv</li>
+            <li class="dropdown-item">Rivne</li>
+          </ul>
+        </div>
+        <div id="delivery" class="dropdown-wrapp long">
+          <span class="dropdown-value">Delivery</span>
+          <span class="arrow-container long"
+            ><i class="fas fa-sort-down"></i
+          ></span>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">New Post</li>
+            <li class="dropdown-item">Ukrposhta</li>
+            <li class="dropdown-item">Pickup</li>
+          </ul>
+        </div>
+        <a class="button-primary proceed" href="#form">Proceed</a>
+      </div>
     </form>
+    <div class="cleafix"></div>
+
+    <section id="how-it-works">
+      <div class="form-text-container">
+        <h3>How it works</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="progres-main-container">
+        <div class="progress-container">
+          <!-- <div class="progress" id="progress"></div> -->
+
+          <div class="circle-container">
+            <div class="circle">1</div>
+            <div>step 1</div>
+          </div>
+          <div class="circle-container">
+            <div class="circle">2</div>
+            <div>step 2</div>
+          </div>
+          <div class="circle-container">
+            <div class="circle">3</div>
+            <div>step 3</div>
+          </div>
+          <div id="circle4" class="circle-container">
+            <div class="circle">4</div>
+            <div>step 4</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="left-side-container">
+          <h4>Step 3</h4>
+          <h3>Sed ut perspiciatis</h3>
+          <ul class="left-side-container-list">
+            <li class="left-side-items">Nemo enim</li>
+            <li class="left-side-items">Die ipsam voluptatem</li>
+            <li class="left-side-items">Ut enim ad minima</li>
+            <li class="left-side-items">Quis autem vel</li>
+            <li class="left-side-items">Sed ut perspiciatis</li>
+          </ul>
+        </div>
+        <div class="right-side-container">
+          <p class="right-side-par">Nemo enim ipsam voluptatem, quia voluptas sit</p>
+          <ol class="right-side-container-list">
+            <li>
+              <span>
+                Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+                accusantium
+              </span>
+            </li>
+            <li>
+              <span
+                >Doloremque laudantium, totam rem aperiam eaque ipsa, quae ab
+                illo inventore</span
+              >
+            </li>
+            <li>
+              <span
+                >Fet enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis</span
+              >
+            </li>
+          </ol>
+          <div>
+            <h7 class="right-side-notice">Notice:</h7>
+            <p class="right-side-par">Dolorem ipsum, quia dolor sit amet consectetu</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./script.js"></script>
     <script
