@@ -108,7 +108,6 @@ nav ul {
   color: white;
   box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
   transform: scale(1.01);
-
   transition: 0.1s;
 }
 
@@ -519,8 +518,26 @@ progress container */
   justify-content: center;
   border: 2px solid var(--empty-progress);
   transition: 0.4s ease;
+  cursor: pointer;
 }
 
+.circle.active {
+  background-color: #FEE5FF;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.progress {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 29%;
+  left: 0;
+  height: 4px;
+  transform: translateY(-50%);
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
 
 .progress-container {
   color: var(--empty-progress);
@@ -537,6 +554,10 @@ progress container */
   flex-direction: column;
   align-items: flex-start; 
   justify-content: center;
+}
+
+.step.lighted {
+  color: var(--primary-color);
 }
 
 .progress-container::before {
@@ -603,6 +624,8 @@ progress container */
 
 .right-side-container {
   margin-top: 92px;
+  overflow: hidden;
+  
 }
 
 .right-side-par{
@@ -631,9 +654,31 @@ h7 {
   font-weight: bold;
 }
 
+
+.slide-1 {
+  position: relative;
+  transform: translateX(100%);
+  transition: .5s;
+}
+.slide-2{
+  position: relative;
+  transform: translateX(200%);
+  transition: .5s;
+}
+
+.slide-3{
+  position: relative;
+  transform: translateX(300%);
+  transition: .5s;
+}
+
+
+
 /* ///////////////////////////////////////////
 ///////////////////////////////////////////
 media calls */
+
+
 
 @media screen and (max-width: 768px) {
   html {
@@ -806,4 +851,6 @@ media calls */
     left: 46%;
     top: 135%;
   }
+
+
 }
