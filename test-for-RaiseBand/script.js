@@ -15,7 +15,7 @@ const progressBar = document.querySelector(`.progress`);
 const dynamicStep = document.getElementById(`dynamic-step`);
 const [...clickebleSlideItms] = document.querySelectorAll(`.left-side-items`);
 const rightSideContainer = document.querySelector(`.right-side-container`);
-
+const [...slides] = document.querySelectorAll(`.slide`);
 
 document.addEventListener(`click`, function (e) {
   const burgerMen = document.querySelector(`.nav-burger`);
@@ -94,13 +94,14 @@ progressContainer.addEventListener(`click`, (e) => {
 
 
 
-const [...slides] = document.querySelectorAll(`.slide`);
+
     
 const goToSlide = function (ind) {
   slides.forEach((slide, i) => {
-    if (slide.classList.contains(`slide-${ind}`)) slide.style.transform = `translateX(0%)`
+    if (slide.classList.contains(`slide-${ind}`)) slide.classList.toggle(`focus`)
     // if(!slide.classList.contains(`slide-${ind}`)) slide.style.transform = `translateX(${100 * i} %)`
-    else slide.style.transform = `translateX(${100 * i} %)`
+    else slide.classList.remove(`focus`)
+    
   })
 }
 
@@ -112,3 +113,9 @@ clickebleSlideItms.forEach((el, i) => {
 
   });
 });
+
+
+
+
+
+
