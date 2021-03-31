@@ -16,6 +16,9 @@ const dynamicStep = document.getElementById(`dynamic-step`);
 const [...clickebleSlideItms] = document.querySelectorAll(`.left-side-items`);
 const rightSideContainer = document.querySelector(`.right-side-container`);
 const [...slides] = document.querySelectorAll(`.slide`);
+const [...dotsEl] = document.querySelectorAll(`.dot`)
+const [...cardPartHolder] = document.querySelectorAll(`.couresel-container-part`)
+
 
 document.addEventListener(`click`, function (e) {
   const burgerMen = document.querySelector(`.nav-burger`);
@@ -82,7 +85,6 @@ progressContainer.addEventListener(`click`, (e) => {
   console.log(e.target);
   if (e.target.classList.contains(`circle`)) {
     e.target.classList.toggle(`active`);
-    console.log(e.target.textContent.slice(-1));
     e.target.nextElementSibling.classList.toggle(`lighted`);
     dynamicStep.textContent = `Step ${e.target.textContent.slice(-1)}`;
   }
@@ -91,13 +93,8 @@ progressContainer.addEventListener(`click`, (e) => {
     ((actives.length - 1) / (circlesEl.length - 1)) * 100 + `%`;
 });
 
-
-
-
-
-    
 const goToSlide = function (ind) {
-  slides.forEach((slide, i) => {
+  slides.forEach((slide) => {
     if (slide.classList.contains(`slide-${ind}`)) slide.classList.toggle(`focus`)
     // if(!slide.classList.contains(`slide-${ind}`)) slide.style.transform = `translateX(${100 * i} %)`
     else slide.classList.remove(`focus`)
@@ -105,14 +102,59 @@ const goToSlide = function (ind) {
   })
 }
 
+
+
 clickebleSlideItms.forEach((el, i) => {
   el.addEventListener(`click`, () => {
     let currentSlide = i + 1
     
     goToSlide(currentSlide)
-
   });
 });
+
+
+const showContent = function (ind) {
+  const [...contentEl] = document.querySelectorAll(`.content`)
+  contentEl.forEach(el => {
+    if (el.classList.contains(`content-${ind}`)) el.classList.toggle(`show`)
+    else el.classList.remove(`show`)
+    console.log(el)
+  })
+  
+}
+
+const terminalBtns = function () {
+  const [...btns] = document.querySelectorAll(`.terminal-btn`)
+  btns.forEach((btn, i )=> {
+    btn.addEventListener(`click`, () => {
+      let currentBtn = i + 1
+      showContent(currentBtn)
+    })
+  })
+}
+terminalBtns()
+
+
+const reviewsSlider = function (ind) {
+  cardPartHolder.forEach((part,i) => {
+    part.style.transform = `translateX(${(ind+ 1) * 100}%)`
+    if (part.classList.contains(`part-${ind + 1}`)) part.style.transform = `translateX(${0}%)`
+    else part.style.transform = `translateX(${(i+ 1) * 100}%)`
+  })
+}
+  
+
+dotsEl.forEach((dot, i) => {
+
+  dot.addEventListener(`click`, () => {
+    
+    reviewsSlider(i)
+  }
+  )
+  
+})
+
+
 
 
 
