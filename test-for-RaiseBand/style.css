@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-family: var(--open--font);
+  color: var(--nav-text-color);
+}
+
 body a {
   text-decoration: none;
 }
@@ -160,10 +165,6 @@ main {
   grid-template-rows: repeat(2, 1fr);
 }
 
-main p {
-  font-family: var(--open--font);
-}
-
 main h2 {
   font-family: var(--epiligue-font);
   color: var(--dark-text-color);
@@ -172,11 +173,9 @@ main h2 {
   font-size: 42px;
 }
 main p {
-  font-family: var(--open--font);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  color: var(--nav-text-color);
 }
 
 .section-1 {
@@ -282,7 +281,6 @@ main p {
   margin: 10px 20px 0 20px;
   padding-bottom: 19px;
   font-size: 1rem;
-  font-family: var(--open--font);
 }
 
 .section-3-card h5 {
@@ -324,10 +322,7 @@ h3 {
 }
 
 .section-4 p {
-  color: var(--nav-text-color);
   font-size: 18px;
-  font-family: var(--open--font);
-
   line-height: 150%;
 }
 
@@ -730,7 +725,6 @@ Cards couresel */
 }
 .user-info p {
   margin: 0 0 4px 10px;
-  color: var(--nav-text-color);
 }
 .fa-user-circle {
   color: #a9b5b9;
@@ -796,7 +790,6 @@ Terminal */
 }
 .terminal-left-side p {
   font-size: 18px;
-  color: var(--nav-text-color);
 }
 .terminal {
   margin: 50px 100px 0 80px;
@@ -848,10 +841,10 @@ Terminal */
 
 .phones-container {
   position: relative;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .phones-right-container {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .phones-vector {
@@ -879,14 +872,110 @@ Terminal */
   list-style: disc;
   color: var(--dark-text-color);
 }
-.phones-list li{
+.phones-list li {
   margin-top: 20px;
 }
 
 .phones-list-item {
   color: var(--nav-text-color);
   font-size: 18px;
-  
+}
+
+.notes-left-container {
+  margin: 100px 0 0 32px;
+}
+
+.notes-right-container {
+  position: relative;
+}
+.notes-vector {
+  height: 434px;
+  position: absolute;
+  left: 75px;
+  top: 36px;
+}
+
+.notes-dots {
+  position: absolute;
+  width: 270px;
+  height: 148px;
+  top: 300px;
+  left: 20px;
+}
+
+.notes-folder {
+  position: absolute;
+  width: 552px;
+  height: 412px;
+  left: 43px;
+  top: 23px;
+}
+
+
+.notice-container {
+  position: relative;
+}
+
+.section-terminal-card {
+  margin: 150px 0 0 139px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 380px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+  border-radius: 8px;
+}
+
+.section-terminal-circle {
+  margin: 20px 5px 0 20px;
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  border: 1px solid #fee5ff;
+  border-radius: 50%;
+  background-color: #fee5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-terminal-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+}
+.section-terminal-card p {
+  margin: 10px 20px 0 20px;
+  padding-bottom: 19px;
+  font-size: 1rem;
+}
+
+.section-terminal-card h5 {
+  margin: 40px 30px 0 10px;
+  font-family: var(--epiligue-font);
+  font-weight: 700;
+  color: var(--dark-text-color);
+}
+.section-terminal-1{
+  display: flex;
+}
+
+.notice-terminal-bg{
+  position: absolute;
+  z-index: -1;
+  left: 105px;
+  top: 132px;
+}
+.notice-right-container{
+  margin: 150px 0 0 17px;
 }
 
 /* ///////////////////////////////////////////
