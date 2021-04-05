@@ -4,7 +4,6 @@
 const [...clickebleSlideItms] = document.querySelectorAll(`.left-side-items`);
 const rightSideContainer = document.querySelector(`.right-side-container`);
 
-
 document.addEventListener(`click`, function (e) {
   const burgerMen = document.querySelector(`.nav-burger`);
   const logo = document.querySelector(`.logo`);
@@ -16,15 +15,15 @@ document.addEventListener(`click`, function (e) {
   }
 });
 
-
 let btnValue = 0;
-const formFunctionality = function(){
-const form = document.querySelector(`form`);
-const colorEl = document.getElementById(`color`);
-const sizeEl = document.getElementById(`size`);
-const calendar = document.getElementById(`calendar`);
-const cityEl = document.getElementById(`city`);
-const deliveryEl = document.getElementById(`delivery`);
+const formFunctionality = function () {
+  const form = document.querySelector(`form`);
+  const colorEl = document.getElementById(`color`);
+  const sizeEl = document.getElementById(`size`);
+  const calendar = document.getElementById(`calendar`);
+  const cityEl = document.getElementById(`city`);
+  const deliveryEl = document.getElementById(`delivery`);
+
   form.addEventListener(`click`, (e) => {
     const plusMinusBtn = document.getElementById(`plus-minus`);
     if (e.target.classList.contains(`plus-button`))
@@ -44,10 +43,8 @@ const deliveryEl = document.getElementById(`delivery`);
       console.log(OrderMade);
     }
   });
-
-}
-formFunctionality()
-
+};
+formFunctionality();
 
 const dropOpen = function () {
   const dropDown = document.querySelectorAll(`.dropdown-wrapp`);
@@ -95,12 +92,11 @@ const progressBarFunc = function () {
 };
 progressBarFunc();
 
-
 const goToSlide = function (ind) {
   const [...slides] = document.querySelectorAll(`.slide`);
   const [...contentEl] = document.querySelectorAll(`.content`);
   contentEl.forEach((el) => {
-    if (el.classList.contains(`content-${ind}`)) el.classList.toggle(`show`);
+    if (el.classList.contains(`content-${ind}`)) el.classList.add(`show`);
     else el.classList.remove(`show`);
   });
 
@@ -111,7 +107,6 @@ const goToSlide = function (ind) {
   });
 };
 
-
 clickebleSlideItms.forEach((el, i) => {
   el.addEventListener(`click`, () => {
     let currentSlide = i + 1;
@@ -119,7 +114,6 @@ clickebleSlideItms.forEach((el, i) => {
     goToSlide(currentSlide);
   });
 });
-
 
 const terminalBtns = function () {
   const [...btns] = document.querySelectorAll(`.terminal-btn`);
@@ -131,7 +125,6 @@ const terminalBtns = function () {
   });
 };
 terminalBtns();
-
 
 const reviewsSlider = function (ind) {
   const [...cardPartHolder] = document.querySelectorAll(
@@ -145,7 +138,6 @@ const reviewsSlider = function (ind) {
   });
 };
 
-
 const dotsClick = function () {
   const [...dotsEl] = document.querySelectorAll(`.dot`);
   dotsEl.forEach((dot, i) => {
@@ -155,3 +147,23 @@ const dotsClick = function () {
   });
 };
 dotsClick();
+
+const extendCard = function () {
+  const [...chevron] = document.querySelectorAll(`.fa-chevron-down`);
+  const [...extendedEl] = document.querySelectorAll(`.extendent-content`);
+
+  chevron.forEach((el, i) =>
+    el.addEventListener(`click`, () => {
+      el.classList.toggle(`open`)
+      extension(i);
+    })
+  );
+
+  function extension(i) {
+    extendedEl.forEach((el, ex) => {
+      if(i === ex) el.classList.toggle(`extended`)
+    });
+  }
+};
+
+extendCard();

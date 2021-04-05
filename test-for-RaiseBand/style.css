@@ -978,6 +978,62 @@ Terminal */
   margin: 150px 0 0 17px;
 }
 
+/* ////////////////////////////////
+//FAQ */
+
+#faq {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-faq {
+  margin-right: 732px;
+}
+.faq-card {
+  margin-top: 50px;
+  padding: 15px;
+  width: 800px;
+  box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+  border-radius: 8px;
+ 
+}
+.faq-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.faq-card-header h5 {
+  font-family: var(--open--font);
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--dark-text-color);
+
+}
+
+.extendent-content {
+  display: none;
+}
+.extendent-content.extended{
+  display: block;
+  transition: .3s;
+}
+
+.fa-chevron-down {
+  cursor: pointer;
+}
+
+.fa-chevron-down.open {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+.faq-btn{
+  margin-top: 30px;
+}
+
 /* ///////////////////////////////////////////
 ///////////////////////////////////////////
 media calls */
