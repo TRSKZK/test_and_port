@@ -1,0 +1,192 @@
+
+.terminal-left-side {
+    margin-top: 50px;
+  }
+  .terminal-left-side p {
+    font-size: 18px;
+  }
+  .terminal {
+    margin: 50px 100px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  .terminal-dots {
+    right: 65px;
+    position: absolute;
+    width: 456px;
+    height: 250px;
+  }
+  .terminal-vector {
+    right: 74px;
+    top: 2px;
+    position: absolute;
+    height: 388px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+  }
+  .card-reader {
+    position: absolute;
+  }
+  
+  .terminal-right-side-slides {
+    position: relative;
+    margin-top: 130px;
+  }
+  
+  .terminal-left-side-list {
+    margin: 70px 0 0 100px;
+  }
+  
+  .content {
+    color: var(--nav-text-color);
+    max-width: 480px;
+    font-size: 18px;
+    font-family: var(--open--font);
+    position: absolute;
+    transform: translateX(200%);
+  }
+  
+  .content-1.show,
+  .content-2.show,
+  .content-3.show {
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+  
+  .phones-container {
+    position: relative;
+    margin-top: 100px;
+  }
+  .phones-right-container {
+    margin-top: 100px;
+  }
+  
+  .phones-vector {
+    position: absolute;
+    transform: matrix(0.92, 0.39, -0.39, 0.92, 0, 0);
+    height: 420px;
+    right: 78px;
+    top: -23px;
+  }
+  
+  .phones-dots {
+    position: absolute;
+    width: 335px;
+    height: 184px;
+    top: 213px;
+    left: 40px;
+  }
+  
+  .phones {
+    position: absolute;
+    right: 21px;
+    top: 1px;
+  }
+  .phones-list {
+    list-style: disc;
+    color: var(--dark-text-color);
+  }
+  .phones-list li {
+    margin-top: 20px;
+  }
+  
+  .phones-list-item {
+    color: var(--nav-text-color);
+    font-size: 18px;
+  }
+  
+  .notes-left-container {
+    margin: 100px 0 0 32px;
+  }
+  
+  .notes-right-container {
+    position: relative;
+  }
+  .notes-vector {
+    height: 434px;
+    position: absolute;
+    left: 75px;
+    top: 36px;
+  }
+  
+  .notes-dots {
+    position: absolute;
+    width: 270px;
+    height: 148px;
+    top: 300px;
+    left: 20px;
+  }
+  
+  .notes-folder {
+    position: absolute;
+    width: 552px;
+    height: 412px;
+    left: 43px;
+    top: 23px;
+  }
+  
+  .notice-container {
+    position: relative;
+  }
+  
+  .section-terminal-card {
+    margin: 150px 0 0 139px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 380px;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+    border-radius: 8px;
+  }
+  
+  .section-terminal-circle {
+    margin: 20px 5px 0 20px;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    border: 1px solid #fee5ff;
+    border-radius: 50%;
+    background-color: #fee5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-terminal-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+  }
+  .section-terminal-card p {
+    margin: 10px 20px 0 20px;
+    padding-bottom: 19px;
+    font-size: 1rem;
+  }
+  
+  .section-terminal-card h5 {
+    margin: 40px 30px 0 10px;
+    font-family: var(--epiligue-font);
+    font-weight: 700;
+    color: var(--dark-text-color);
+  }
+  .section-terminal-1 {
+    display: flex;
+  }
+  
+  .notice-terminal-bg {
+    position: absolute;
+    z-index: -1;
+    left: 105px;
+    top: 132px;
+  }
+  .notice-right-container {
+    margin: 150px 0 0 17px;
+  }

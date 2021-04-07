@@ -1,0 +1,225 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./form.css");
+@import url("./progress.css");
+@import url("./couresell.css");
+@import url("./terminal.css");
+@import url("./faq.css");
+@import url("./footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&family=Open+Sans&display=swap");
+/* font-family: 'Epilogue', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+* {
+  margin: 0, auto;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #c774ee;
+  --dark-text-color: #111563;
+  --nav-text-color: #63718e;
+  --epiligue-font: "Epilogue", sans-serif;
+  --open--font: "Open Sans", sans-serif;
+  --empty-progress: #bad9e7;
+  --footer-text: #7e8183;
+}
+h4 {
+  color: var(--dark-text-color);
+  font-family: var(--epiligue-font);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-family: var(--open--font);
+  color: var(--nav-text-color);
+}
+
+body a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////
+///////////////////////////////////////////
+media calls */
+
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    height: 50px;
+  }
+
+  .header-components {
+    margin: 0 0 0 -550px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: -1000%;
+  }
+
+  .nav-list.active ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list.active {
+    position: fixed;
+    left: -20%;
+    top: -7px;
+    display: flex;
+    transition: 0.3s;
+    margin: 0 auto;
+    padding: 0;
+    transition: 0.5s;
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+    width: 120%;
+    height: 50px;
+  }
+
+  .nav-list li {
+    padding-top: 20px;
+  }
+
+  .nav-burger {
+    display: block;
+    position: fixed;
+    right: 3%;
+    z-index: 4;
+  }
+
+  .nav-burger.active {
+    position: fixed;
+    display: block;
+    right: 3%;
+    z-index: 4;
+  }
+
+  .nav-burger.active::before {
+    top: 9px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  .nav-burger.active::after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+  .nav-burger.active span {
+    display: none;
+  }
+
+  .logo {
+    display: inline-block;
+    padding-left: 40px;
+  }
+
+  .logo.active {
+    display: none;
+    transition: 0.3s;
+  }
+
+  main {
+    margin: 30px 20px 0 20px;
+    display: grid;
+    grid-template-rows: 1fr 0 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h2 {
+    margin: 0 auto;
+  }
+  .section-1 {
+    margin: 20px 0 0 0;
+  }
+
+  .section-2 {
+    width: 498px;
+    height: 348.67px;
+    margin: -80px 80px 40px 140px;
+  }
+  .section-4 {
+    margin-top: 70px;
+  }
+  .section-3 {
+    top: 700px;
+  }
+
+  #dots-2 {
+    margin: 250px 0px 0 23px;
+  }
+  #vector-2 {
+    right: 284px;
+  }
+  #watch {
+    right: 180px;
+  }
+  .section-3-card {
+    top: 217px;
+    left: 331px;
+  }
+  form {
+    margin: 0 auto;
+
+    width: 768px;
+    height: 473px;
+    margin-top: 400px;
+  }
+
+  .dropdown-wrapp {
+    width: 300px;
+    margin: 0 20px 40px 0;
+  }
+  .dropdown-wrapp.long {
+    width: 300px;
+    height: 50px;
+  }
+
+  .dynamic-button {
+    margin: 0 0 0 -10px;
+  }
+  .form-control-sm {
+    width: 300px;
+  }
+  .plus-button {
+    top: 14%;
+    left: 150%;
+  }
+  .minus-button {
+    top: 14%;
+  }
+
+  .result-value {
+    position: absolute;
+    top: 153%;
+    left: 24%;
+  }
+
+  .row {
+    margin: 0 0 0 70px;
+    position: relative;
+  }
+
+  .proceed {
+    position: absolute;
+    left: 46%;
+    top: 135%;
+  }
+}

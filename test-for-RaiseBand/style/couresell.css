@@ -1,0 +1,122 @@
+.couresel-container {
+    display: flex;
+    margin: 33px 8px 0 45px;
+    align-items: center;
+    position: relative;
+    max-width: 1249px;
+    overflow: hidden;
+  }
+  
+  .card {
+    margin-left: 30px;
+    background: #ffffff;
+    width: 380px;
+    height: 500px;
+    box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+    border-radius: 8px;
+  }
+  .couresel-container-part {
+    display: flex;
+    transition: 0.5s;
+  }
+  
+  .part-2,
+  .part-3,
+  .part-4 {
+    position: absolute;
+    transform: translateX(100%);
+  }
+  
+  .card-top-info {
+    margin: 40px 32px 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-star {
+    color: var(--primary-color);
+  }
+  
+  .stars-container span {
+    color: var(--nav-text-color);
+    font-family: var(--open--font);
+  }
+  
+  .fa-quote-left {
+    font-size: 32px;
+    color: #e8f8ff;
+  }
+  
+  .card-text-info {
+    font-family: var(--open--font);
+    margin: 41px 52px 0 32px;
+    font-style: italic;
+    color: var(--nav-text-color);
+    font-size: 18px;
+  }
+  
+  .user-info {
+    display: flex;
+    margin: 80px 0 0 32px;
+    align-items: center;
+  }
+  .user-info p {
+    margin: 0 0 4px 10px;
+  }
+  .fa-user-circle {
+    color: #a9b5b9;
+    font-size: 24px;
+  }
+  .category {
+    color: var(--nav-text-color);
+    position: relative;
+    margin: 5px 0 0 32px;
+    font-size: 1rem;
+    word-spacing: 5px;
+  }
+  .vertical-line:before {
+    content: "";
+    position: absolute;
+    background-color: var(--nav-text-color);
+    width: 13px;
+    height: 2px;
+    transform: rotateZ(90deg);
+    top: 12px;
+    left: 67px;
+  }
+  .read-more {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .read-more a {
+    font-family: var(--epiligue-font);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: dotted var(--primary-color);
+    padding-bottom: 5px;
+  }
+  .dots-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dot {
+    margin-left: 10px;
+    border: none;
+    background-color: #e8f8ff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .dot:focus {
+    outline: none;
+    background-color: #286dbd;
+  }
+  .dot.on {
+    background-color: #286dbd;
+  }

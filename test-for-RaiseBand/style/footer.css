@@ -1,0 +1,82 @@
+
+
+#footer {
+    padding-bottom: 50px;
+    color: var(--footer-text);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1e1f;
+  }
+  
+  #footer a {
+    font-family: var(--open--font);
+    color: var(--footer-text);
+    font-size: 1rem;
+  }
+  #info {
+    padding: 3px 3px 7px 3px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: var(--footer-text);
+    border: 2px solid #7e8183;
+    width: 105px;
+    height: 35px;
+    border-radius: 28px;
+    background-color: #1c1e1f;
+  }
+  #info:focus {
+    outline: none;
+  }
+  
+  .footer-container {
+    margin: 70px 250px 0 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .fab {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 25px;
+  }
+  .footer-about a {
+    margin-top: 10px;
+  }
+  
+  .footer-bankist-info {
+    display: flex;
+    align-items: center;
+  }
+  .footer-about-items {
+    margin-top: 15px;
+  }
+  
+  .footer-select {
+    margin-top: 40px;
+  }
+  
+  #facebook:hover {
+    color: blue;
+  }
+  #instagram:hover {
+    content: url("../assets/logos-instagram.png");
+    width: 23px;
+    height: 23px;
+    margin: 0 9px 0 10px;
+  }
+  
+  #youtube:hover {
+    color: #e52d27;
+  }
+  
+  #pinterest:hover {
+    color: #d22a2d;
+  }

@@ -1,0 +1,123 @@
+
+header {
+    position: relative;
+    box-shadow: 0px 2px 16px rgba(32, 108, 164, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px 0 200px;
+    width: 100%;
+    height: 80px;
+  }
+  .header-components {
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav {
+    padding-top: 20px;
+    margin: 0 11% 22px 11%;
+  }
+  .nav-list a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+  }
+  
+  .nav-list a:hover {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+  .nav-list {
+    padding-left: 100px;
+    margin: 0 auto;
+    font-family: var(--open--font);
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .nav-list li {
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-right: 0 auto;
+    display: inline;
+  }
+  
+  #nav {
+    color: white;
+    font-weight: bold;
+  }
+  .button-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 24px;
+  }
+  .button-primary:hover {
+    display: inline-block;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+    transform: scale(1.01);
+    transition: 0.1s;
+  }
+  
+  #sign {
+    border: 2px solid var(--nav-text-color);
+    padding: 4px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  #sign:hover {
+    display: inline-block;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: scale(1.03);
+    transition: 0.1s;
+  }
+  
+  .nav-burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-burger span:after,
+  .nav-burger:after,
+  .nav-burger:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--nav-text-color);
+  }
+  .nav-burger:before {
+    top: 0;
+    left: 0;
+  }
+  .nav-burger:after {
+    bottom: 0;
+    left: 0;
+  }
+  .nav-burger span:after {
+    top: 50%;
+  }
+  

@@ -154,16 +154,17 @@ const extendCard = function () {
 
   chevron.forEach((el, i) =>
     el.addEventListener(`click`, () => {
-      el.classList.toggle(`open`)
+      el.classList.toggle(`open`);
       extension(i);
     })
   );
 
   function extension(i) {
     extendedEl.forEach((el, ex) => {
-      if(i === ex) el.classList.toggle(`extended`)
+      if (i === ex) el.classList.toggle(`extended`);
     });
   }
 };
 
 extendCard();
+
